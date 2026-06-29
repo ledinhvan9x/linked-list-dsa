@@ -33,21 +33,6 @@ const llFind = (head, target) => {
 }
 console.log(llFind(a, 'D'))
 
-const reverseLL = (head) => {
-    let curr = head
-    let prev = null
-    
-    while (curr !== null) {
-        let next = curr.next
-        
-        curr.next = prev
-        prev = curr
-        curr = next
-    }
-    return prev
-}
-console.log(reverseLL(a))
-
 const llGetNodeValue = (head, index) => {
     let curr = head
     let count = 0
@@ -94,3 +79,18 @@ const traversal = (head) => {
     }
 }
 traversal(a)
+
+const reverseLL = (head) => {
+    let curr = head
+    let prev = null
+    
+    while (curr !== null) {
+        let next = curr.next
+        
+        curr.next = prev
+        prev = curr
+        curr = next
+    }
+    return prev
+}
+console.log(reverseLL(a))
