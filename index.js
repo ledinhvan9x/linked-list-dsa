@@ -62,26 +62,26 @@ console.log(llGetNodeValue(a, 2))
 
 const llSum = (head) => {
     let curr = head
-    let result = 0
+    let sum = 0
 
     while (curr !== null) {
-        result += curr.value
+        sum += curr.value
         curr = curr.next
     }
 
-    return result
+    return sum
 }
 console.log(llSum(One))
 
 const llValues = (head) => {
     let curr = head
-    let result = []
+    let values = []
 
     while (curr !== null) {
-        result.push(curr.value)
+        values.push(curr.value)
         curr = curr.next
     }
-    return result
+    return values
 }
 console.log(llValues(a))
 
