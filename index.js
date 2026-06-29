@@ -85,12 +85,12 @@ const llValues = (head) => {
 }
 console.log(llValues(a))
 
-// const traversal = (head) => {
-//     let curr = head
+ const traversal = (head) => {
+     let curr = head
 
-//     while (curr !== null) {
-//         console.log('curr', curr.value)
-//         curr = curr.next
-//     }
-// }
-// traversal(a)
+     while (curr !== null) {
+         console.log('curr', curr.value)
+         curr = curr.next
+     }
+ }
+ traversal(a)
